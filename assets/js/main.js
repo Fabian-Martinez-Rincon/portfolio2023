@@ -41,8 +41,16 @@ const shadowHeader = () =>{
 window.addEventListener('scroll', shadowHeader)
 
 /*=============== EMAIL JS ===============*/
+const contactForm = document.getElementById('contact-form'),
+    contactMessage = document.getElementById('contact-message')
 
+const sendEmail = (e) =>{
+    e.preventDefault()
 
+    emailjs.sendForm('service_9x3q8z9', 'template_7f1x7q8', contactForm, 'user_0X2k3x4Jj1KzVJ3q4KQ4V')
+}
+
+contactForm.addEventListener('submit', sendEmail)
 /*=============== SHOW SCROLL UP ===============*/ 
 
 

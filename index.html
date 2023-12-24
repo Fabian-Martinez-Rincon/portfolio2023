@@ -142,7 +142,7 @@
          </section>
 
          <!--==================== SERVICES ====================-->
-         <section class="services section">
+         <section class="services section" id="services">
             <h2 class="section__title-2"><span>Servicios</span></h2>
             <div class="services__container container grid">
                <article class="services__card">
@@ -340,9 +340,11 @@
                      </div>
 
                      <div class="contact__box contact__area">
-                        <textarea name="user_message" id="message" class="contact__input" required placeholder="">Message</textarea>
-                        <label for="message" class="contact__label"></label>
+                        <textarea name="user_message" id="message" class="contact__input" required placeholder="Message"></textarea>
+                        <label for="message" class="contact__label">Message</label>
                      </div>
+
+                     <p class="contact__message" id="contact-message"></p>
                      <button type="submit" class="contact__button button">
                         <i class="ri-send-plane-line"></i> Enviar
                      </button>
@@ -357,7 +359,7 @@
                            No envia correos electronicos.
                         </p>
 
-                        <p class="contact__social-description-1">
+                        <p class="contact__social-description-2">
                            Escribime en mis redes sociales.
                         </p>
                      </div>
@@ -383,17 +385,37 @@
 
       <!--==================== FOOTER ====================-->
       <footer class="footer">
-         
+         <div class="footer__container container grid">
+            <ul class="footer__links">
+               <li>
+                  <a href="#about" class="footer__link">Sobre Mi</a>
+               </li>
+
+               <li>
+                  <a href="#services" class="footer__link">Servicios</a>
+               </li>
+
+               <li>
+                  <a href="projects" class="footer__link">Proyectos</a>
+               </li>
+            </ul>
+
+            <span class="footer__copy">
+               &copy; 2023 - Fabian Martinez Rincon
+            </span>
+         </div>
       </footer>
 
       <!--========== SCROLL UP ==========-->
-      
+      <a href="#" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-s-line"></i>
+      </a>
 
       <!--=============== SCROLLREVEAL ===============-->
       <script src=""></script>
       
       <!--=============== EMAIL JS ===============-->
-      
+      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
       <!--=============== MAIN JS ===============-->
       <script src="assets/js/main.js"></script>
